@@ -9,6 +9,12 @@
     <script src='main.js'></script>
 </head>
 <body>
-    <h1>Backend Admin</h1>
+    <?php
+        include "modulos/header.php";
+
+        include "modulos/menu.php";
+
+        include "modulos/footer.php";
+    ?>
 </body>
 </html>
