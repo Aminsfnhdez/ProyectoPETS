@@ -8,22 +8,22 @@
                 </li>
                 <li class="menu-title">Opciones</li><!-- /.menu-title -->
                 <li class="menu-item-has-children dropdown">
-                    <a href="medicantos" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-cogs"></i>Medicamentos</a>
+                    <a href="medicantos" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-medkit"></i>Medicamentos</a>
                     <ul class="sub-menu children dropdown-menu">
-                        <li><i class="fa fa-puzzle-piece"></i><a href="medicamentos">Medicamentos</a></li>
+                        <li><i class="fa fa-medkit"></i><a href="medicamentos">Medicamentos</a></li>
                         
                     </ul>
                 </li>
                 <li class="menu-item-has-children dropdown">
-                    <a href="mascotas" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-table"></i>Mascotas</a>
+                    <a href="mascotas" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-bug"></i>Mascotas</a>
                     <ul class="sub-menu children dropdown-menu">
-                        <li><i class="fa fa-table"></i><a href="mascotas">Mascotas</a></li>
+                        <li><i class="fa fa-bug"></i><a href="mascotas">Mascotas</a></li>
                     </ul>
                 </li>
                 <li class="menu-item-has-children dropdown">
-                    <a href="perfil" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-table"></i>Perfil</a>
+                    <a href="perfil" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-users"></i>Perfil</a>
                     <ul class="sub-menu children dropdown-menu">
-                        <li><i class="fa fa-table"></i><a href="perfil">Perfil</a></li>
+                        <li><i class="fa fa-user"></i><a href="perfil">Perfil</a></li>
                     </ul>
                 </li>                    
 

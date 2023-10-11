@@ -34,49 +34,55 @@
 <body>
     <?php
 
-    include "modulos/menu.php";
-
-    //Right Panel 
-    echo '<div id="right-panel" class="right-panel">';
-
-    include "modulos/header.php";
-
-    // Obtener la URL actual
-    $url = $_SERVER['REQUEST_URI'];
-
-    // Remover la parte inicial de la URL para obtener la parte de la ruta
-    $ruta = str_replace('/proyectoPets/', '', $url);
-
-    // Verificar qué ruta se ha tomado y cargar el archivo correspondiente
-    if ($ruta == 'inicio') {
-        include 'modulos/inicio.php';
-    } elseif ($ruta == 'perfil') {
-        include 'modulos/perfil.php';
-    } elseif ($ruta == 'mascotas') {
-        include 'modulos/mascotas.php';
-    } elseif ($ruta == 'medicamentos') {
-        include 'modulos/medicamentos.php';
-    } else {
-        include 'modulos/inicio.php';   // Manejar el caso en que la ruta no coincida con ninguna opción válida
-    }
+    if (isset($_SESSION["validarSesionBackend"]) && $_SESSION["validarSesionBackend"] === "ok") {
+        include "modulos/menu.php";
 
 
-    // if (isset($_GET["ruta"]) && !empty($_GET["ruta"])) {
-
-    //     if (
-    //         $_GET["ruta"] == "inicio" ||
-    //         $_GET["ruta"] == "perfil" ||
-    //         $_GET["ruta"] == "mascotas" ||
-    //         $_GET["ruta"] == "medicamentos"
-    //     ) {
-    //         include "modulos/" . $_GET["ruta"] . ".php";
-    //     }
-    // }
 
 
-    include "modulos/footer.php";
-    echo "</div>";
+        //Right Panel 
+        echo '<div id="right-panel" class="right-panel">';
 
+        include "modulos/header.php";
+
+        // Obtener la URL actual
+        $url = $_SERVER['REQUEST_URI'];
+
+        // Remover la parte inicial de la URL para obtener la parte de la ruta
+        $ruta = str_replace('/proyectoPets/', '', $url);
+
+        // Verificar qué ruta se ha tomado y cargar el archivo correspondiente
+        if ($ruta === "inicio") {
+            include "modulos/inicio.php";
+        } elseif ($ruta === 'perfil') {
+            include 'modulos/perfil.php';
+        } elseif ($ruta === 'mascotas') {
+            include 'modulos/mascotas.php';
+        } elseif ($ruta === 'medicamentos') {
+            include 'modulos/medicamentos.php';
+        } else {
+            include 'modulos/inicio.php';   // Manejar el caso en que la ruta no coincida con ninguna opción válida
+        }
+
+
+        // if (isset($_GET["ruta"]) && !empty($_GET["ruta"])) {
+
+        //     if (
+        //         $_GET["ruta"] == "inicio" ||
+        //         $_GET["ruta"] == "perfil" ||
+        //         $_GET["ruta"] == "mascotas" ||
+        //         $_GET["ruta"] == "medicamentos"
+        //     ) {
+        //         include "modulos/" . $_GET["ruta"] . ".php";
+        //     }
+        // }
+
+
+        include "modulos/footer.php";
+        echo "</div>";
+    }    
+        include "modulos/login.php";
+    
     ?>
 
     <!-- Scripts -->
