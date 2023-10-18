@@ -3,6 +3,6 @@
 class Ruta{
 
     static public function ctrRuta(){
-        return "http://http://localhost/proyectoPets/";
+        return "http://localhost/proyectoPets/";
     }
 }

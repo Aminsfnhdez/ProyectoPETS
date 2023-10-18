@@ -50,36 +50,36 @@ session_start();
         include "modulos/header.php";
 
         // Obtener la URL actual
-        $url = $_SERVER['REQUEST_URI'];
+        // $url = $_SERVER['REQUEST_URI'];
 
-        // Remover la parte inicial de la URL para obtener la parte de la ruta
-        $ruta = str_replace('/proyectoPets/', '', $url);
+        // // Remover la parte inicial de la URL para obtener la parte de la ruta
+        // $ruta = str_replace('/proyectoPets/', '', $url);
 
-        // Verificar qué ruta se ha tomado y cargar el archivo correspondiente
-        if ($ruta === "inicio") {
-            include "modulos/inicio.php";
-        } elseif ($ruta === "perfil") {
-            include "modulos/perfil.php";
-        } elseif ($ruta === "mascotas") {
-            include "modulos/mascotas.php";
-        } elseif ($ruta === "medicamentos") {
-            include "modulos/medicamentos.php";
-        } else {
-            include "modulos/inicio.php";   // Manejar el caso en que la ruta no coincida con ninguna opción válida
-        }
+        // // Verificar qué ruta se ha tomado y cargar el archivo correspondiente
+        // if ($ruta === "inicio") {
+        //     include "modulos/inicio.php";
+        // } elseif ($ruta === "perfil") {
+        //     include "modulos/perfil.php";
+        // } elseif ($ruta === "mascotas") {
+        //     include "modulos/mascotas.php";
+        // } elseif ($ruta === "medicamentos") {
+        //     include "modulos/medicamentos.php";
+        // } else {
+        //     include "modulos/inicio.php";   // Manejar el caso en que la ruta no coincida con ninguna opción válida
+        // }
 
         // Esta deberia ser la forma correcta de gestionar las rutas 
-        // if (isset($_GET["ruta"]) && !empty($_GET["ruta"])) {
+        if (isset($_GET["ruta"]) && !empty($_GET["ruta"])) {
 
-        //     if (
-        //         $_GET["ruta"] === "inicio" ||
-        //         $_GET["ruta"] === "perfil" ||
-        //         $_GET["ruta"] === "mascotas" ||
-        //         $_GET["ruta"] === "medicamentos"
-        //     ) {
-        //         include "modulos/" . $_GET["ruta"] . ".php";
-        //     }
-        // }
+            if (
+                $_GET["ruta"] == "inicio" ||
+                $_GET["ruta"] == "perfil" ||
+                $_GET["ruta"] == "mascotas" ||
+                $_GET["ruta"] == "medicamentos"
+            ) {
+                include "modulos/" . $_GET["ruta"] . ".php";
+            }
+        }
 
 
         include "modulos/footer.php";
