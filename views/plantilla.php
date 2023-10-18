@@ -1,5 +1,9 @@
+<?php 
+session_start();
+?>
+
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
     <meta charset='utf-8'>
@@ -64,7 +68,7 @@
             include "modulos/inicio.php";   // Manejar el caso en que la ruta no coincida con ninguna opción válida
         }
 
-
+        // Esta deberia ser la forma correcta de gestionar las rutas 
         // if (isset($_GET["ruta"]) && !empty($_GET["ruta"])) {
 
         //     if (

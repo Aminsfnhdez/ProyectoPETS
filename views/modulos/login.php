@@ -7,14 +7,14 @@
                 </a>
             </div>
             <div class="login-form">
-                <form>
+                <form method="post">
                     <div class="form-group">
                         <label>CORREO ELECTRÓNICO</label>
-                        <input type="email" class="form-control" placeholder="Correo Electrónico">
+                        <input type="email" class="form-control" id="ingemail" name="ingemail" placeholder="Correo Electrónico">
                     </div>
                     <div class="form-group">
                         <label>Contraseña</label>
-                        <input type="password" class="form-control" placeholder="contraseña">
+                        <input type="password" class="form-control" id="ingpassword" name="ingpassword" placeholder="contraseña">
                     </div>
                     <div class="checkbox">
                         <label>
@@ -25,7 +25,10 @@
                     </div>
                     <button type="submit" class="btn btn-success btn-flat m-b-30 m-t-30">INGRESAR</button>
 
-
+                    <?php
+                    $login = new ControladorAdministrador();
+                    $login->ctrIngresoAdministrador();
+                    ?>
                 </form>
             </div>
         </div>

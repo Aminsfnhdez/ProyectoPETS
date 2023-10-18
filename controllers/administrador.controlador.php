@@ -3,7 +3,7 @@
 class ControladorAdministrador
 {
 
-    public function ctrAministrador()
+    public function ctrIngresoAdministrador()
     {
 
         if (isset($_POST["ingemail"])) {
