@@ -67,7 +67,47 @@
                             </thead>
                             <tbody>
 
-                            
+                            <?php
+
+                                $item = null;
+                                $valor = null;
+                                $pets = ControladorMascota::ctrMostrarMascota($item, $valor);
+                                
+                                foreach ($medicamnetos as $key => $value) {
+
+                                    echo ' <tr>
+                          <td>' . ($key + 1) . '</td>
+                          <td>' . $value["nombre"] . '</td>
+                          <td>' . $value["raza"] . '</td>
+                          <td>' . $value["edad"] . '</td>
+                          <td>' . $value["peso"] . '</td>
+                          <td>' . $value["medicamento_id"] . '</td>
+                          <td>' . $value["cliente_id"] . '</td>';
+
+                                    if ($value["foto"] != "") {
+
+                                        echo '<td><img src="' . $value["foto"] . '" class="img-thumbnail" width="40px"></td>';
+                                    } else {
+
+                                        echo '<td><img src="views/imgs/perfil/default/user-secret-solid.svg" class="img-thumbnail" width="40px"></td>';
+                                    }
+
+                                    
+                                    echo '<td>
+
+                          <div class="btn-group">
+
+                            <button class="btn btn-warning btnEditarMascota" idMascota="' . $value["identificacion"] . '" data-toggle="modal" data-target="#modalEditarMascota"><i class="fa fa-pencil"></i></button>
+
+                            <button class="btn btn-danger btnEliminarMascota" idMascota="' . $value["identificacion"] . '" fotoMascota="' . $value["foto"] . '"><i class="fa fa-times"></i></button>
+
+                          </div>
+
+                        </td>
+
+                      </tr>';
+                                }
+                            ?>
 
 
                             </tbody>
