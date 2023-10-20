@@ -8,6 +8,12 @@
                 </li>
                 <li class="menu-title">Opciones</li><!-- /.menu-title -->
                 <li class="menu-item-has-children dropdown">
+                    <a href="clientes" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-users"></i>Clientes</a>
+                    <ul class="sub-menu children dropdown-menu">
+                        <li><i class="fa fa-users"></i><a href="clientes">Clientes</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item-has-children dropdown">
                     <a href="medicantos" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-medkit"></i>Medicamentos</a>
                     <ul class="sub-menu children dropdown-menu">
                         <li><i class="fa fa-medkit"></i><a href="medicamentos">Medicamentos</a></li>
@@ -21,7 +27,7 @@
                     </ul>
                 </li>
                 <li class="menu-item-has-children dropdown">
-                    <a href="perfil" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-users"></i>Perfil</a>
+                    <a href="perfil" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-user"></i>Perfil</a>
                     <ul class="sub-menu children dropdown-menu">
                         <li><i class="fa fa-user"></i><a href="perfil">Perfil</a></li>
                     </ul>

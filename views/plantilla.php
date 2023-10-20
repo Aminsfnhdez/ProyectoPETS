@@ -31,8 +31,17 @@ session_start();
     <link href="https://cdn.jsdelivr.net/npm/weathericons@2.1.0/css/weather-icons.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/fullcalendar@3.9.0/dist/fullcalendar.min.css" rel="stylesheet" />
 
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap4.min.css">
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="vistas/plugins/sweetalert2/sweetalert2.all.js"></script>
+
+    <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js"></script>
+    <script src="https://cdn.datatables.net/fixedheader/3.1.7/js/dataTables.fixedHeader.min.js"></script>
+    <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script> -->
 </head>
 
 <body>
@@ -56,6 +65,7 @@ session_start();
             if (
                 $_GET["ruta"] == "inicio" ||
                 $_GET["ruta"] == "salir" ||
+                $_GET["ruta"] == "clientes" ||
                 $_GET["ruta"] == "mascotas" ||
                 $_GET["ruta"] == "medicamentos"
             ) {
@@ -63,6 +73,9 @@ session_start();
             }
         }
         include "modulos/perfil.php";
+        include "modulos/medicamentos.php";
+        include "modulos/clientes.php";
+        include "modulos/mascotas.php";
         include "modulos/footer.php";
         echo '</div>';
     } else {
@@ -96,6 +109,9 @@ session_start();
     <script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/moment.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@3.9.0/dist/fullcalendar.min.js"></script>
     <script src="views/assets/js/init/fullcalendar-init.js"></script>
+    
+    <!--Gestion de datos con la base de datos-->
+    <script src="views/js/gestorAdministrador.js"></script>
 </body>
 
 </html>

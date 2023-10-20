@@ -130,5 +130,3 @@ if ($_SESSION["perfil"] != "administrador") {
         </div>
     </div><!-- .animated -->
 </div><!-- .content -->
-
-
