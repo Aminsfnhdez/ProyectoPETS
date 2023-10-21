@@ -33,7 +33,7 @@ class ControladorAdministrador
 
                         echo '<script>
 
-                            window.location = "inicio";
+                            window.location = "./";
 
                         </script>';
                     } else {

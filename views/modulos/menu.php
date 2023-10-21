@@ -14,7 +14,7 @@
                     </ul>
                 </li>
                 <li class="menu-item-has-children dropdown">
-                    <a href="medicantos" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-medkit"></i>Medicamentos</a>
+                    <a href="medicamentos" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-medkit"></i>Medicamentos</a>
                     <ul class="sub-menu children dropdown-menu">
                         <li><i class="fa fa-medkit"></i><a href="medicamentos">Medicamentos</a></li>
                         

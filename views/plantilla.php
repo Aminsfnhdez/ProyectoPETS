@@ -74,8 +74,9 @@ session_start();
         }
         include "modulos/perfil.php";
         include "modulos/medicamentos.php";
-        // include "modulos/clientes.php";
+        include "modulos/clientes.php";
         include "modulos/mascotas.php";
+        // include "modulos/salir.php";
         include "modulos/footer.php";
         echo '</div>';
     } else {
